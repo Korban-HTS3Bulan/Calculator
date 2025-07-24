@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator?</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="">
+    <!-- container keseluruhan -->
+    <div class="flex flex-col h-dvh justify-center">
+      <!-- container for text -->
+      <div class="flex flex-col items-center mb-3">
+        <h1 id="display1" class="text-2xl font-bold">Calculator?</h1>
+        <p class="text-[12px]">Wanna find out? tap 3 times anywhere</p>
+      </div>
+
+      <!-- container for input tag -->
+      <div>
+        <div class="flex justify-center">
+          <input
+            type="text"
+            id="inputLink"
+            placeholder="Masukkan Link yang ingin dituju"
+            class="border mr-3 pl-3 rounded-2xl py-1"
+          />
+          <button id="submitLink" class="submit-btn font-bold px-1">Submit</button>
+        </div>
+        <div class="flex justify-center mt-3">
+          <input
+            type="text"
+            id="inputSC"
+            placeholder="Masukkan kode rahasia"
+            class="border mr-3 pl-3 rounded-2xl py-1"
+          />
+          <button id="submitSC" class="submit-btn font-bold px-1">Submit</button>
+        </div>
+        <!-- input tag end -->
+      </div>
+
+      <!-- calculator -->
+      <!-- Calculator Display -->
+      <div class="flex flex-col items-center mt-6">
+        <input
+          id="calculator-display"
+          readonly
+          class="border rounded-lg w-64 h-10 mb-3 flex items-center px-3 bg-white font-mono text-lg"
+          placeholder="0"
+        />
+
+        <!-- Calculator Button Menu -->
+        <div class="grid grid-cols-4 gap-2 w-64">
+          <button class="btn" onclick="press('7')">7</button>
+          <button class="btn" onclick="press('8')">8</button>
+          <button class="btn" onclick="press('9')">9</button>
+          <button class="btn" onclick="press('÷')">÷</button>
+          <button class="btn" onclick="press('4')">4</button>
+          <button class="btn" onclick="press('5')">5</button>
+          <button class="btn" onclick="press('6')">6</button>
+          <button class="btn" onclick="press('×')">×</button>
+          <button class="btn" onclick="press('1')">1</button>
+          <button class="btn" onclick="press('2')">2</button>
+          <button class="btn" onclick="press('3')">3</button>
+          <button class="btn" onclick="press('-')">-</button>
+          <button class="btn" onclick="press('0')">0</button>
+          <button class="btn" onclick="press('.')">.</button>
+          <button class="btn" onclick="clearDisplay()">C</button>
+          <button class="btn" onclick="press('+')">+</button>
+          <button
+            class="btn col-span-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white"
+            onclick="calculate()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

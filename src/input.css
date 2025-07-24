@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer components {
+    .submit-btn {
+        background-color: blue;
+        color: aqua;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 0px 2px;
+    }
+    .submit-btn:hover {
+        background-color: rgba(0, 0, 255, 80%);
+    }
+    .submit-btn:active {
+        background-color: rgba(0, 0, 255, 70%);
+    }
+    /* button for Calculator */
+    .btn {
+        background-color: rgba(0, 0, 255, 90%);
+        color: aqua;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .btn:hover {
+        background-color: rgba(0, 0, 255, 80%);
+    }
+    .btn:active {
+        background-color: rgba(0, 0, 255, 70%);
+    }
+}
