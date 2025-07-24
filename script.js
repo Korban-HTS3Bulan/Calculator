@@ -1,10 +1,7 @@
 const display = document.getElementById("calculator-display");
-
 const operator = ["+", "-", "×", "÷"];
-
 const inputLink = document.getElementById("inputLink");
 const submitLink = document.getElementById("submitLink");
-
 const inputSC = document.getElementById("inputSC");
 const submitSC = document.getElementById("submitSC");
 let linkValue = "";
@@ -48,24 +45,10 @@ function calculate() {
   } catch (error) {
     display.value = "Error";
   }
-  // let displayCal = document.getElementById("display1");
+ 
   result = display.value
   console.log(result)
   if (result === secretCd) {
     window.open(inputLink.value);
-    // displayCal.textContent = "sokasik"
   }
 }
-// masukkan ke dalam function calculate??
-
-
-
-// web open ==> inputLink
-
-
-// function for clearing the link after display
-//
-
-// Masukkan Link, Enter
-// Masukkan Secret code, enter
-// if result/hasil === secret code ==> open Link!!!
