@@ -6,18 +6,17 @@ const inputSC = document.getElementById("inputSC");
 const submitSC = document.getElementById("submitSC");
 let linkValue = "";
 let secretCd = "";
-// console.log(secretCd);
 
 // button link input
 submitLink.addEventListener("click", function () {
   linkValue = inputLink.value;
-  console.log(linkValue);
+  inputLink.value = "";
 });
 
-// button SC input 
+// button SecretCode input 
 submitSC.addEventListener("click", function () {
   secretCd = inputSC.value;
-  console.log(secretCd);
+  inputSC.value = "";
 });
 
 // calculator at its finest
@@ -36,19 +35,19 @@ function clearDisplay() {
   display.value = "";
 }
 
-let result = display.value;
-
+// calculate function
+let result = "";
 function calculate() {
   try {
-  let expression = display.value.replace(/×/g, "*").replace(/÷/, "/");
+  let expression = display.value.replace(/×/g, "*").replace(/÷/g, "/");
   display.value = eval(expression);
-  } catch (error) {
+  }
+  catch (error) {
     display.value = "Error";
   }
  
   result = display.value
-  console.log(result)
   if (result === secretCd) {
-    window.open(inputLink.value);
+    window.open(linkValue);
   }
 }
