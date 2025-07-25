@@ -9,10 +9,20 @@ let secretCd = "";
 
 // container hidden
 const containerInput = document.getElementById("containerInput")
-const bodyTag = document.querySelector("body")
-bodyTag.addEventListener("click", function() {
-  // console.log("hello world")
-  containerInput.style.display = "block"
+const calculatorCon = document.getElementById("calculator-container")
+const test = document.getElementById("test")
+let clickCount = 0
+// event listener for hidden object
+document.body.addEventListener("click", function(event) {
+  if (calculatorCon.contains(event.target)) return;
+  // increase click count
+  clickCount++
+  // set display hidden if tap 3 times
+  if (clickCount == 3) {
+    containerInput.style.display = "block"
+    clickCount = 0
+  }
+  // containerInput.style.display = "block"
 }
 )
 // button link input

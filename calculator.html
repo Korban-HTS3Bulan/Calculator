@@ -7,7 +7,7 @@
   </head>
   <body class="">
     <!-- container keseluruhan -->
-    <div class="flex flex-col h-dvh justify-center">
+    <div class="flex flex-col h-dvh justify-center" id="test">
       <!-- container for text -->
       <div class="flex flex-col items-center mb-3">
         <h1 id="display1" class="text-2xl font-bold">Calculator?</h1>
@@ -23,7 +23,9 @@
             placeholder="Masukkan Link yang ingin dituju"
             class="border mr-3 pl-3 rounded-2xl py-1"
           />
-          <button id="submitLink" class="submit-btn font-bold px-1">Submit</button>
+          <button id="submitLink" class="submit-btn font-bold px-1">
+            Submit
+          </button>
         </div>
         <div class="flex justify-center mt-3">
           <input
@@ -32,14 +34,17 @@
             placeholder="Masukkan kode rahasia"
             class="border mr-3 pl-3 rounded-2xl py-1"
           />
-          <button id="submitSC" class="submit-btn font-bold px-1">Submit</button>
+          <button id="submitSC" class="submit-btn font-bold px-1">
+            Submit
+          </button>
         </div>
         <!-- input tag end -->
       </div>
 
       <!-- calculator -->
       <!-- Calculator Display -->
-      <div class="flex flex-col items-center mt-6">
+
+      <div id="" class="flex flex-col items-center mt-6">
         <input
           id="calculator-display"
           readonly
@@ -48,7 +53,7 @@
         />
 
         <!-- Calculator Button Menu -->
-        <div class="grid grid-cols-4 gap-2 w-64">
+        <div id="calculator-container" class="grid grid-cols-4 gap-2 w-64">
           <button class="btn" onclick="press('7')">7</button>
           <button class="btn" onclick="press('8')">8</button>
           <button class="btn" onclick="press('9')">9</button>
