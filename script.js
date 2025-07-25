@@ -7,6 +7,14 @@ const submitSC = document.getElementById("submitSC");
 let linkValue = "";
 let secretCd = "";
 
+// container hidden
+const containerInput = document.getElementById("containerInput")
+const bodyTag = document.querySelector("body")
+bodyTag.addEventListener("click", function() {
+  // console.log("hello world")
+  containerInput.style.display = "block"
+}
+)
 // button link input
 submitLink.addEventListener("click", function () {
   linkValue = inputLink.value;
