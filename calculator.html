@@ -21,6 +21,7 @@
             type="text"
             id="inputLink"
             placeholder="Masukkan Link yang ingin dituju"
+            autocomplete="off"
             class="border mr-3 pl-3 rounded-2xl py-1"
           />
           <button id="submitLink" class="submit-btn font-bold px-1">
@@ -29,9 +30,10 @@
         </div>
         <div class="flex justify-center mt-3">
           <input
-            type="text"
+            type="number"
             id="inputSC"
             placeholder="Masukkan kode rahasia"
+            autocomplete="off"
             class="border mr-3 pl-3 rounded-2xl py-1"
           />
           <button id="submitSC" class="submit-btn font-bold px-1">
@@ -44,12 +46,13 @@
       <!-- calculator -->
       <!-- Calculator Display -->
 
-      <div id="" class="flex flex-col items-center mt-6">
+      <div class="flex flex-col items-center mt-6">
         <input
           id="calculator-display"
           readonly
           class="border rounded-lg w-64 h-10 mb-3 flex items-center px-3 bg-white font-mono text-lg"
           placeholder="0"
+          autocomplete="off"
         />
 
         <!-- Calculator Button Menu -->
