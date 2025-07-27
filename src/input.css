@@ -1,50 +1,55 @@
 @import "tailwindcss";
 
 @layer components {
-    .submit-btn {
-        background-color: blue;
-        color: aqua;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-weight: bold;
-        padding: 0px 2px;
-    }
-    .submit-btn:hover {
-        background-color: rgba(0, 0, 255, 80%);
-    }
-    .submit-btn:active {
-        background-color: rgba(0, 0, 255, 70%);
-    }
-    /* button for Calculator */
-    .btn {
-        background-color: rgba(0, 0, 255, 90%);
-        color: white;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-weight: bold;
-        height: 65px;
-    }
-    .btn:hover {
-        background-color: rgba(0, 0, 255, 80%);
-    }
-    .btn:active {
-        background-color: rgba(0, 0, 255, 70%);
-    }
-    .op-btn {
-        background-color: rgb(255, 255, 0);
-        color: black;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-weight: bold;
-        height: 65px;
-    }
-    .op-btn:hover {
-        background-color: rgba(255, 255, 0, 80%);
-    }
-    .op-btn:active {
-        background-color: rgba(255, 255, 0, 70%);
-    }
-    * {
-        touch-action: manipulation;
-    }
+  .submit-btn {
+    background-color: blue;
+    color: aqua;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0px 2px;
+  }
+  .submit-btn:hover {
+    background-color: rgba(0, 0, 255, 80%);
+  }
+  .submit-btn:active {
+    background-color: rgba(0, 0, 255, 70%);
+  }
+  /* button for Calculator */
+  .btn {
+    background-color: rgba(0, 0, 255, 90%);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 65px;
+  }
+  .btn:hover {
+    background-color: rgba(0, 0, 255, 80%);
+  }
+  .btn:active {
+    background-color: rgba(0, 0, 255, 70%);
+  }
+  .op-btn {
+    background-color: rgb(255, 255, 0);
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 65px;
+  }
+  .op-btn:hover {
+    background-color: rgba(255, 255, 0, 80%);
+  }
+  .op-btn:active {
+    background-color: rgba(255, 255, 0, 70%);
+  }
+  * {
+    touch-action: manipulation;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }

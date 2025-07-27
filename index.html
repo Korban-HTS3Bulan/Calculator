@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator?</title>
     <link rel="stylesheet" href="/src/output.css" />
   </head>
@@ -10,11 +11,11 @@
     <div class="flex flex-col justify-center h-screen" id="test">
       <!-- Text Calculator? -->
       <div class="flex flex-col items-center mb-6 text-center">
-        <h1 id="display1" class="md:text-8xl text-9xl font-bold">Calculator?</h1>
-        <p class="text-2xl">Wanna find out? tap 3 times anywhere</p>
+        <h1 id="display1" class="text-4xl sm:text-6xl font-bold">Calculator?</h1>
+        <p class="text-base sm:text-xl">Wanna find out? tap 3 times anywhere</p>
       </div>
 
-      <!-- container for input tag -->
+      <!-- container for hiddden input tag -->
       <div id="containerInput" class="hidden">
         <div class="flex justify-center">
           <input
@@ -22,21 +23,21 @@
             id="inputLink"
             placeholder="Masukkan Link yang ingin dituju"
             autocomplete="off"
-            class="border mr-3 pl-3 rounded-2xl py-1 "
+            class="border mr-3 sm:mb-0 pl-3 rounded-2xl py-1"
           />
           <button id="submitLink" class="submit-btn font-bold px-1">
             Submit
           </button>
         </div>
-        <div class="flex justify-center mt-3">
+        <div class="flex justify-center items-center mt-3">
           <input
             type="number"
             id="inputSC"
             placeholder="Masukkan kode rahasia"
             autocomplete="off"
-            class="border mr-3 pl-3 rounded-2xl py-1"
+            class="border mr-3 sm:mb-0 pl-3 rounded-2xl py-1"
           />
-          <button id="submitSC" class="submit-btn font-bold px-1">
+          <button id="submitSC" class="submit-btn font-bold p-1">
             Submit
           </button>
         </div>
@@ -46,18 +47,19 @@
       <!-- calculator -->
 
       <!-- Calculator Display -->
-      <div class="flex flex-col items-center mt-6">
+      <div class="flex flex-col items-center mt-6 px-4">
         <input
           id="calculator-display"
           readonly
-          class="border rounded-lg h-10 mb-3 flex items-center px-3 py-7 w-72 text-2xl font-bold bg-white font-mono  placeholder:text-2xl"
+          class="border rounded-lg h-16 mb-3 flex items-center px-3 py-4 w-full max-w-sm 
+          text-2xl font-bold bg-white font-mono text-right placeholder:text-2xl"
           placeholder="0"
           autocomplete="off"
         />
       </div>
       <!-- Calculator Button Menu -->
-      <div class="mx-auto">
-        <div id="calculator-container" class="grid grid-cols-4 gap-2 w-72">
+      <div class="mx-auto w-full max-w-sm">
+        <div id="calculator-container" class="grid grid-cols-4 gap-4">
           <button class="btn" onclick="press('7')">7</button>
           <button class="btn" onclick="press('8')">8</button>
           <button class="btn" onclick="press('9')">9</button>
