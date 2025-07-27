@@ -9,7 +9,7 @@ Projek ini lahir karena video tutorial di youtube yang mengatakan "jangan hanya 
 - ✅ Kalkulator fungsional menggunakan HTML, CSS, dan JavaScript murni
 - 🔒 Panel input rahasia untuk memasukkan “hasil rahasia” dan link redirect
 - 🎯 Jika hasil kalkulasi cocok dengan nilai rahasia, maka link akan terbuka
-- 🕵️ Panel rahasia hanya muncul setelah pengguna mengklik body sebanyak 3 kali (bukan
+- 🕵️ Panel rahasia hanya muncul setelah pengguna mengklik body sebanyak 3 kali dan akan tertutup kembali jika ditekan lagi sebanyak 3 kali
 
 ## 💡 Pelajaran yang Saya Dapat
 - Mempelajari basic sintaks Javascript dan logika dibaliknya
