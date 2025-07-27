@@ -5,13 +5,13 @@
     <title>Calculator?</title>
     <link rel="stylesheet" href="/src/output.css" />
   </head>
-  <body class="">
+  <body>
     <!-- container keseluruhan -->
-    <div class="flex flex-col h-dvh justify-center" id="test">
-      <!-- container for text -->
-      <div class="flex flex-col items-center mb-3">
-        <h1 id="display1" class="text-2xl font-bold">Calculator?</h1>
-        <p class="text-[12px]">Wanna find out? tap 3 times anywhere</p>
+    <div class="flex flex-col justify-center h-screen" id="test">
+      <!-- Text Calculator? -->
+      <div class="flex flex-col items-center mb-6 text-center">
+        <h1 id="display1" class="md:text-6xl text-7xl font-bold">Calculator?</h1>
+        <p class="">Wanna find out? tap 3 times anywhere</p>
       </div>
 
       <!-- container for input tag -->
@@ -44,37 +44,38 @@
       </div>
 
       <!-- calculator -->
-      <!-- Calculator Display -->
 
+      <!-- Calculator Display -->
       <div class="flex flex-col items-center mt-6">
         <input
           id="calculator-display"
           readonly
-          class="border rounded-lg w-64 h-10 mb-3 flex items-center px-3 bg-white font-mono text-lg"
+          class="border rounded-lg h-10 mb-3 flex items-center px-3 py-7 bg-white font-mono text-lg"
           placeholder="0"
           autocomplete="off"
         />
-
-        <!-- Calculator Button Menu -->
-        <div id="calculator-container" class="grid grid-cols-4 gap-2 w-64">
+      </div>
+      <!-- Calculator Button Menu -->
+      <div class="mx-auto">
+        <div id="calculator-container" class="grid grid-cols-4 gap-2 w-72">
           <button class="btn" onclick="press('7')">7</button>
           <button class="btn" onclick="press('8')">8</button>
           <button class="btn" onclick="press('9')">9</button>
-          <button class="btn" onclick="press('÷')">÷</button>
+          <button class="op-btn" onclick="press('÷')">÷</button>
           <button class="btn" onclick="press('4')">4</button>
           <button class="btn" onclick="press('5')">5</button>
           <button class="btn" onclick="press('6')">6</button>
-          <button class="btn" onclick="press('×')">×</button>
+          <button class="op-btn" onclick="press('×')">×</button>
           <button class="btn" onclick="press('1')">1</button>
           <button class="btn" onclick="press('2')">2</button>
           <button class="btn" onclick="press('3')">3</button>
-          <button class="btn" onclick="press('-')">-</button>
+          <button class="op-btn" onclick="press('-')">-</button>
           <button class="btn" onclick="press('0')">0</button>
           <button class="btn" onclick="press('.')">.</button>
           <button class="btn" onclick="clearDisplay()">C</button>
-          <button class="btn" onclick="press('+')">+</button>
+          <button class="op-btn" onclick="press('+')">+</button>
           <button
-            class="btn col-span-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white"
+            class="rounded-[10px] border border-black h-12 col-span-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white"
             onclick="calculate()"
           >
             =
